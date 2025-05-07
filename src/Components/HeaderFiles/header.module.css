@@ -1,0 +1,460 @@
+.upperHeaderContainer{
+    padding:10px 200px;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.lowerHeaderContainer{
+    padding:10px 200px;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow:0px 2px 2px 0px #aaa;
+}
+
+.fixedHeaderAnimation{
+    width:80%;
+    z-index: 999;
+    position:fixed;
+    transition: 1s all;
+    animation:fixedHeader 1s;
+}
+@keyframes fixedHeader {
+    0%{
+        opacity:0;
+        transform: translateY(-100%);
+    }
+}
+
+.topLeftSection{
+    gap:10px;
+    display: flex;
+    justify-content: start;
+}
+
+.topRightSection{
+    gap:10px;
+    display: flex;
+    justify-content: end;
+}
+
+.lowerLeftSection{
+    gap:10px;
+    display: flex;
+    justify-content: start;
+}
+
+.lowerRightSection{
+    gap:10px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.headerLanguageDropDownContainer{
+    gap:5px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: start;
+}
+
+.headerLanguageIcon{
+    width:16px;
+    display: flex;
+}
+
+.headerLanguageIcon img{
+    width:100%;
+    height: 100%;
+}
+
+.headerCurrencyDropDownContainer{
+    gap:5px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: start;
+}
+
+.headerCurrencyIcon{
+    width:16px;
+    display: flex;
+}
+
+.headerCurrencyIcon img{
+    width:100%;
+    height: 100%;
+}
+
+.headerMobileContainer{
+    gap:2px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerMobileIcon{
+    font-size: 16px;
+}
+
+.headerWishlistContainer{
+    gap:2px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerWishlistIcon{
+    font-size: 16px;
+}
+
+.topNavItem{
+    display: flex;
+    color:black;
+    font-size: 18px;
+}
+
+.headerLogo{
+    width:180px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.headerLogo img{    
+    width:100%;
+    height:100%;
+}
+
+.navigationContainer{
+    gap:15px;
+    display: flex;
+}
+
+.headerSearchIcon{
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: end;
+}
+
+.headerSearchIcon:hover{
+    cursor: pointer;
+    color:#e71580;
+}
+
+.headerCartContainer{
+    gap:2px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerCartIcon{
+    font-size: 16px;
+}
+
+.headerLogInContainer{
+    gap:2px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerLoginIcon{
+    font-size: 16px;
+}
+
+.userNameContainer{
+    font-size: 20px;
+    font-weight: 700;
+    color: #e71580;
+    text-transform: capitalize;
+}
+
+.searchContainer{
+    width:100%;
+    height:100%;
+    z-index: 9999;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    animation: openSearch 1.5s;
+    background-color: rgb(0,0,0,0.95);
+}
+
+@keyframes openSearch {
+    0%{
+        transform: translateX(-100%);
+    }
+}
+
+.closeSearchButton{
+    top:10px;
+    right:10px;
+    width: 30px;
+    height: 30px;
+    padding:10px;
+    display: flex;
+    color:white;
+    font-size: 20px;
+    position:absolute;
+    border-radius: 50%;
+    align-items: center;
+    transition: 0.3s all;
+    justify-content: center;
+    transform: rotateX(180deg);
+    background-color: #e71580;
+}
+
+.closeSearchButton:hover{
+    color:#e71580;
+    cursor: pointer;
+    transition: 0.3s all;
+    transform: rotateX(0deg);
+    background-color: white;
+}
+
+.searchInputContainer{
+    gap:10px;
+    width: 50%;
+    display: flex;
+    color:white;
+    font-size: 50px;
+    position: relative;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchInputContainer input{
+    width:40%;
+    border:0px;
+    color:white;
+    outline: none;
+    font-size: 20px;
+    padding:20px 50px 10px 10px;
+    background-color: transparent;
+    transition: width 0.4s ease-in-out;
+    border-bottom: 1px solid #e71580;
+}
+
+.searchInputContainer input:focus{
+    width:100%;
+}
+
+.searchIcon{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: -35px;
+}
+
+.searchIcon:hover{
+    color:#e71580;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.headerProductDropDown::placeholder{
+    font-size: 180px;
+}
+
+.product{
+    display: flex;
+    position: relative;
+}
+
+.productDropDownContainer{
+    gap:10px;
+    top:40px;
+    right:-215px;
+    width: 70vw;
+    padding:20px;
+    z-index: 9999;
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+    max-height: 300px;
+    position: absolute;
+    border-radius: 1px;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    animation: productDropDownAnimation 0.5s;
+}
+.fixedHeaderAnimation .productDropDownContainer{
+    right:-320px;
+}
+.productDropDownContainerAR{
+    right:-888px;
+}
+
+.fixedHeaderAnimation .productDropDownContainerAR{
+    right:-780px;
+}
+
+@keyframes productDropDownAnimation {
+    0%{
+        opacity: 0;
+        transform: scale(1)
+    }
+}
+
+.productDropDownCategory{
+    gap:10px;
+    width:20%;
+    display: flex;
+    border-top:0px;
+    padding:0px 20px;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+}
+
+.productDropDownCategoryTitle{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: start;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.productDropDownCategoryItem{
+    width:200px;
+    font-size: 14px;
+    color:#787878;
+    overflow: hidden;
+    text-align: start;
+    white-space: nowrap;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+}
+
+.productDropDownCategoryItem:hover {
+    cursor: pointer;
+    color:#e666a8;
+    transition: 0.5s all;
+}
+
+.responsiveNavigationMenuIcon{
+    display: flex;
+    font-size: 30px;
+    color:#787878;
+    align-items: center;
+    justify-content: end;
+}
+
+.responsiveNavigationMenuIcon:hover{
+    cursor: pointer;
+    color: #e71580;
+    transition: 0.5s all;
+}
+
+.responsiveNavigationMenuContainer{
+    top:0;
+    right:0;
+    gap:10px;
+    width:40%;
+    height: 100%;
+    display: flex;
+    z-index: 9999;
+    color:white;
+    position: fixed;
+    align-items: center;
+    animation: respNav 1s;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(0,0,0,0.95);
+}
+
+@keyframes respNav {
+    0%{
+        transform: translateX(180%);
+    }
+}
+
+.closeRespNavigationButton{
+    top:10px;
+    right:35%;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    display: flex;
+    color:white;
+    font-size: 18px;
+    position:absolute;
+    border-radius: 50%;
+    align-items: center;
+    transition: 0.3s all;
+    justify-content: center;
+    background-color: #e71580;
+}
+
+@media screen and (max-width: 1024px) {
+    .productDropDownContainer{
+        right:-230px;
+        width: 70vw;
+    }
+    .productDropDownContainerAR{
+        right:-520px;
+    }
+    .productDropDownCategory{
+        width:40%;
+        margin-bottom: 20px;
+        border:0px;
+    }
+    .fixedHeaderAnimation{
+        padding:0px;
+    }
+    .fixedHeaderAnimation .productDropDownContainer{
+        right:-350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fixedHeaderAnimation{
+        width:97.5vw;
+    }
+    .fixedHeaderAnimation .productDropDownContainer{
+        right:-360px;
+    }
+    .productDropDownContainer{
+        right:-190px;
+        width: 90vw;
+    }
+    .productDropDownContainerAR{
+        right:-535px;
+    }
+    .topNavItem{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .upperHeaderContainer{
+      gap:10px; 
+    }
+    .fixedHeaderAnimation{
+        width:95vw;
+    }
+    .topNavItemResp{
+        color:white;
+    }
+    .headerSearchIcon{
+        color:#787878;
+    }
+    .searchInputContainer{
+        font-size: 30px;
+    }
+    .searchIcon{
+        font-size: 25px;
+    }
+}

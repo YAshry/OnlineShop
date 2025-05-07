@@ -1,0 +1,226 @@
+.footerSubscribeContainer{
+    color:white;
+    padding:50px 200px;
+    background-color: #e71580;
+    justify-content: space-between;
+}
+
+.leftItems{
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.subscribeInputContainer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.subscribeInputContainer input{
+    width:300px;
+    outline: none;
+    font-size: 16px;
+    padding:15px 10px;
+}
+
+.subscribeInputContainer button{
+    border:0px;
+    color:white;
+    font-size: 16px;
+    padding:16px 20px;
+    background-color: #1f1f1f;
+}
+
+.subscribeInputContainer button:hover{
+    cursor: pointer;
+    transition: 0.5 all;
+    background-color: #252525;
+    box-shadow: inset 0px 0px 5px 0px white ;
+}
+
+.footerPagesContainer{
+    color:white;
+    align-items: start;
+    justify-content: center; 
+    background-color: #1f1f1f;
+    padding: 50px 190px 20px 190px;
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.footerLogo{
+    width:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerLogo img{    
+    width:100%;
+    height:100%;
+}
+
+.footerSocialIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerDescription{
+    font-size: 16px;
+    color:#aaa;
+}
+
+.footerSocialIconsContainer{
+    gap:20px;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+}
+
+a.footerSocialIconsItem{
+    color:white;
+}
+
+.footerSocialIconsItem:hover{
+    cursor: pointer;
+    color:#e71580;
+}
+
+.footerSection{
+    gap:30px;
+    display:flex;
+    padding:0px 10px;
+    margin-bottom: 50px;
+    flex-direction:column;
+}
+
+.footerSectionTitle{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footerSectionContent{
+    gap:10px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerNavItem{
+    color:#aaa;
+    font-size: 15px;
+}
+
+.footerBottomSection{
+    display: flex;
+    padding:30px 200px;
+    align-items: center;
+    background-color: #1f1f1f;
+    justify-content: space-between;
+}
+
+.copyRight{
+    color:white;
+    font-size: 15px;
+    text-align: start;
+}
+
+.paymentSection{
+    gap:20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.paymentItem{
+    width:55px;
+    height: 30px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.paymentItem img{
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.paymentItem:hover{
+    cursor: pointer;
+    transition: 0.5s all;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 5px 0px #aaa;
+}
+
+@media screen and (max-width: 1024px) {
+    .footerSubscribeContainer{
+        padding:45px 150px;
+    }
+    .leftItems{
+        font-size: 24px;
+    }
+    .subscribeInputContainer input{
+        width:200px;
+        font-size: 15px;
+        padding:10px 10px;
+    }
+    .subscribeInputContainer button{
+        font-size: 15px;
+        padding:11px 15px;
+    }
+    .footerBottomSection{
+        padding:30px 150px;
+    }
+    .footerPagesContainer{
+        padding: 50px 140px 20px 140px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerSubscribeContainer{
+        padding:45px 10px;
+    }
+    .footerBottomSection{
+        padding:30px 10px;
+    }
+    .paymentSection{
+        gap:10px;
+    }
+    .footerPagesContainer{
+        padding: 50px 10px 20px 10px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .footerSubscribeContainer{
+        gap:10px;
+        display: flex;
+        justify-content: center;
+    }
+    .footerPagesContainer{
+        padding: 50px 20px;
+        align-items: center;
+        justify-content: center; 
+    }
+    .footerSection{
+        text-align: center;
+        align-items: center;
+    }
+    .footerBottomSection{
+        gap:20px;
+        display: flex;
+        padding:30px 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerSectionContent{
+        align-items: center;
+    }
+}
+

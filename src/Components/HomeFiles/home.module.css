@@ -1,0 +1,187 @@
+.imageSectionContainer{
+    gap:20px;
+    display: flex;
+    padding:50px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSectionContainer img{
+    width:400px;
+    height:300px;
+}
+
+.imageSectionContainer img:hover{
+    transition: 0.5s all;
+    transform: scale(1.02);
+}
+
+.exclusiveProductsContainer{
+    gap:20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.etitle{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.catTitle{
+    gap:20px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.exclusiveProductsContainer catTitle a{
+    color:black;
+    text-decoration: none;
+}
+
+.homeCatItems{
+    color:black;
+    font-size: 18px;
+}
+
+.homeCardsContainer{
+    gap:20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding:0px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientContainer{
+    gap:20px;
+    display: flex;
+    padding:100px 0px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffeef7;
+}
+
+.clientSubContainer{
+    gap:30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clientTitle{
+    font-size: 30px;
+    font-weight:600;
+}
+
+.clientComment{
+    color:#787878;
+    font-size: 16px;
+}
+
+.clientArrow{
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientArrow:hover{
+    color:#e71580;
+    cursor: pointer;
+}
+
+.clientContent{
+    gap:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientContent img{
+    width:50px;
+    height:50px;
+}
+
+.servicesContainer{
+    gap:20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicesItemContainer{
+    gap:10px;
+    width:20%;
+    display: flex;
+    padding:0px 10px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #ccc;
+}
+
+.servicesIcon{
+    color:#787878;
+    font-size: 50px;
+}
+
+.servicesTitle{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.servicesDescription{
+    color:#787878;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .homeCardsContainer{
+        padding:0px 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homeCardsContainer{
+        padding:0px 50px;
+    }
+    .servicesItemContainer{
+        width:40%;
+        border:none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .imageSectionContainer{
+        flex-direction: column;
+        padding:50px 50px;
+    }
+    .imageSectionContainer img{
+        width:300px;
+        height:200px;
+    }
+    .catTitle{
+        gap:20px;
+        flex-wrap: wrap;
+    }
+    .clientTitle{
+        font-size: 25px;
+    }
+    .clientContainer{
+        padding:100px 50px;
+    }
+    .servicesItemContainer{
+        width:60%;
+        border:none;
+    }
+}

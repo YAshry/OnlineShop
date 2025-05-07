@@ -1,0 +1,69 @@
+.noProductsContainer{
+    gap:15px;
+    display: flex;
+    padding:50px 0px;
+    color: #787878;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.noProductStatement{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.productsTableContainer{
+    width:70%;
+    overflow-x: auto;
+    padding: 50px 0px;
+    white-space: nowrap;
+}
+
+.productImage{
+    width:50px;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImage img{
+    width:100%;
+    height:100%;
+}
+
+.removeIcon{
+    padding:10px;
+    display: flex;
+    color:white;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e71580;
+}
+
+.removeIcon:hover{
+    cursor: pointer;
+    transition: 0.2s all;
+    transform: scale(1.1);
+}
+
+.totalPrice{
+    color:black;
+    font-size:20px;
+    font-weight:600;
+    text-align: start;
+}
+
+.totalPriceValue{
+    font-size:20px;
+    font-weight:600;
+    color:#e71580;
+}
+
+@media screen and (max-width: 768px) {
+    .productsTableContainer{
+        width:80%;
+    }
+}

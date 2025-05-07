@@ -1,0 +1,101 @@
+.cardContainer{
+    gap:10px;
+    width:250px;
+    height:auto;
+    display:flex;
+    position: relative;
+    flex-direction:column;
+    background-color:white;
+    box-shadow:0px 0px 5px 0px #aaa;
+}
+
+.cardImageContainer{
+    height:250px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#f7f7f7;
+}
+
+.cardImage{
+    width:auto;
+    height:90%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardImage img{
+    width:100%;
+    height:100%;
+}
+
+.cardContentContainer{
+    gap:10px;
+    padding:10px;
+    display: flex;
+    align-items: start;
+    flex-direction:column;
+}
+
+.productTitle{
+    width:60%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.productDescription{
+    font-size: 15px;
+    color:#787878;
+}
+
+.productPrice{
+    font-size: 18px;
+    font-weight:600;
+    color:#e71580;
+}
+
+.ratingContainer{
+    gap:5px;
+    display:flex;
+    color:black;
+    font-size:15px;
+    align-items:center;
+    justify-content:start;
+}
+
+.addToCartButton{
+    color:white;
+    cursor: pointer;
+    padding:10px 20px;
+    border-radius:10px;
+    transition: 0.5s all;
+    background-color: #e71580;
+}
+
+.cardOverLay{
+    gap:10px;
+    width:100%;
+    height:100%;
+    z-index: 99;
+    display: none;
+    position: absolute;
+    align-items: center;
+    transition: 0.5s all;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(0,0,0,0.8);
+}
+
+.cardContainer:hover .cardOverLay{
+    display: flex;
+    transition: 0.5s all;
+    animation: overlayAnimation 1s;
+}
+
+@keyframes overlayAnimation {
+    0%{
+        opacity: 0;
+        transform: rotateX(100deg);
+    }
+}

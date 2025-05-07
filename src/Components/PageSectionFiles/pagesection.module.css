@@ -1,0 +1,17 @@
+.sectionContainer{
+    padding:50px;
+    display: flex;
+    color:#505050;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc7e4;
+}
+
+@media screen and (max-width: 426px) {
+    .sectionContainer{
+        font-size: 30px;
+    }
+}

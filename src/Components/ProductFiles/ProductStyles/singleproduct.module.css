@@ -1,0 +1,147 @@
+.productDetailsContainer{
+    gap:20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding:50px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.productImageContainer{
+    display: flex;
+    min-width:300px;
+    max-width:300px;
+    min-height: 300px;
+    max-height: 300px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #ffeef7;
+}
+
+.productImage{
+    height:auto;
+    width:150px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.productImage img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+.productDetails{
+    gap:10px;
+    width:60%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productName{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.productPrice{
+    color:#e71580;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.productRating{
+    display: flex;
+    align-items: center;
+}
+
+.productDescription{
+    font-size: 17px;
+    color:#787878;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.addToCartButton{
+    color:white;
+    cursor: pointer;
+    padding:10px 20px;
+    border-radius:10px;
+    transition: 0.5s all;
+    background-color: #e71580;
+}
+
+.addToCartButton:hover{
+    color:#e71580;
+    transition: 0.5s all;
+    background-color: white;
+    border: 1px solid #e71580;
+}
+
+@keyframes cardButton {
+    0%{
+        transform:scaleY(1.1);
+    }
+}
+
+.addedButton{
+    color:#e71580;
+    cursor: pointer;
+    padding:10px 20px;
+    border-radius:10px;
+    transition: 0.5s all;
+    background-color: white;
+    border: 1px solid #e71580;
+}
+
+.addedButton:hover{
+    color:white;
+    transition: 0.5s all;
+    border: 1px solid white;
+    background-color: #e71580;
+}
+
+.closeModalButton{
+    top:10px;
+    right:10px;
+    width: 30px;
+    height: 30px;
+    padding:10px;
+    display: flex;
+    color:white;
+    font-size: 20px;
+    position:absolute;
+    border-radius: 50%;
+    align-items: center;
+    transition: 0.3s all;
+    justify-content: center;
+    transform: rotateX(180deg);
+    background-color: #e71580;
+}
+
+.closeModalButton:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+    transform: rotateX(0deg);
+    background-color: #787878;
+}
+
+@media screen and (max-width: 768px) {
+    .productDetails{
+        width:40%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .productDetails{
+        width:100%;
+    }
+}

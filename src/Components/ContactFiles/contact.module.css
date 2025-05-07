@@ -1,0 +1,173 @@
+.contactSectionContainer{
+    gap:50px;
+    width:100%;
+    display: flex;
+    padding:50px 0px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardsSection{
+    gap:15px;
+    width:70%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContainer{
+    gap:15px;
+    padding:20px;
+    width:25%;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 0px #aaa;
+}
+
+.cardIcon{
+    padding:18px;
+    display: flex;
+    font-size: 18px;
+    color:#e71580;
+    border-radius: 50%;
+    align-items: center;
+    transition: 0.5s all;
+    justify-content: center;
+    border: 1px solid #e71580;
+
+    background-size: 0% 50%; /* icon background size 0 for not shown before hover*/
+    background-position: 50% 0%; /* the position where it will start */ 
+    background-repeat: no-repeat; /* for no repeating the image or in this case the background */
+    background-image: linear-gradient(#e71580, #e71580);
+}
+
+.cardContainer:hover .cardIcon {
+    color: #fff;
+    background-size: 100% 100%;
+}
+
+.cardContainer span{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cardContainer p{
+    color:#787878;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contactSection{
+    gap:15px;
+    width:70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactContent{
+    gap:15px;
+    width:50%;
+    padding:15px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactContent span{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.contactContent p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #787878;
+}
+
+.contactMaps{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+.contactInputContainer{
+    gap:10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.contactInputField{
+    width:44%;
+    padding:10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline-color: rgb(0, 136, 255);
+    box-shadow: 0px 0px 5px 0px #ccc;
+}
+
+.contactInputField::placeholder{
+    color:#787878;
+}
+
+.contactInputField:hover{
+    border: 1px solid #bababa;
+}
+
+.mapsContainer{
+    width:50%;
+    height:50vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .contactSection{
+        width:90%;
+    }
+    .contactInputField{
+        width:43%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactSection{
+        width:100%;   
+        flex-wrap: wrap-reverse;
+    }
+    .contactContent{
+        width:90%;
+    }
+    .mapsContainer{
+        width:90%;
+    }
+    .cardsSection{
+        width:100%;
+        flex-wrap: wrap;
+    }
+    .cardContainer{
+        width:40%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .contactInputField{
+        width:100%;
+    }
+    .contactContent{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .cardContainer{
+        width:80%;
+    }
+}
